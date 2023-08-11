@@ -1,3 +1,5 @@
 # Xylophone
 
-Original assets by [The App Brewery](https://appbrewery.com)
+iOS bootcamp on Udemy.
+
+Original assets by [The App Brewery](https://appbrewery.com).
