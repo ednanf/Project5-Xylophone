@@ -23,6 +23,7 @@ class ViewController: UIViewController {
 // MARK: - IBActions
     @IBAction func keyPressed(_ sender: UIButton) {
         playSound()
+        
     }
     
 // MARK: - Functions
