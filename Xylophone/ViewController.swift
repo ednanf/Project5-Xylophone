@@ -22,9 +22,19 @@ class ViewController: UIViewController {
 
 // MARK: - IBActions
     @IBAction func keyPressed(_ sender: UIButton) {
-        let buttonPressed = sender.currentTitle!
+        let buttonPressed = sender.currentTitle! // has to be force unwrapped because currentitle is an optional
+        
         playSound(soundName: buttonPressed)
         
+        // controls opacity
+        sender.alpha = 0.5
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            // smooths the animation
+            UIView.animate(withDuration: 0.3) {
+                // returns to the original color
+                sender.alpha = 1.0
+            }
+        }
     }
     
 // MARK: - Functions
